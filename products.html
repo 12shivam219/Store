@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="http://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="nav-bar flex justify-around items-center p-5 relative z-10 h-32 m-auto shadow-xl">
+        <div class="nav flex">
+            <ul class="ul">
+                <li
+                    class="text-2xl list-none font-semibold text-black mr-6  hover:text-orange-600 hover:transition-all hover:duration-1000 hover:ease-in-out ">
+                    <a href="index.html">Home</a>
+                </li>
+                <li
+                    class="text-2xl list-none font-semibold text-black mr-6  hover:text-orange-600  hover:transition-all hover:duration-1000 hover:ease-in-out ">
+                    <a href="products.html">Products</a>
+                </li>
+                <li
+                    class="text-2xl list-none font-semibold text-black mr-6  hover:text-orange-600 hover:transition-all hover:duration-1000 hover:ease-in-out ">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+
+            <div class="nav-short" id="nav-short">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="nav-head w-1/5">
+            <img src="./img/logo-black.svg" alt="" class="head-logo w-2/3">
+        </div>
+        <div class="nav-cart relative cursor-pointer" id="nav-cart">
+            <i class="fas fa-shopping-cart text-3xl text-black"></i>
+            <span>0</span>
+        </div>
+    </header>
+
+    <div class="tog" id="toggler">
+        <div class="toogle">
+            <ul class="h-full p-12">
+                <li class=" ">
+                    <a href="index.html"> <span><i class="fas fa-home fa-fw"></i></span> Home</a>
+                </li>
+                <li class=" ">
+                    <a href="products.html"> <span><i class="fas fa-couch fa-fw"></i></span> Products</a>
+                </li>
+                <li class="">
+                    <a href="about.html"> <span><i class="fas fa-book fa-fw"></i></span> About</a>
+                </li>
+            </ul>
+            <div class="toggle-short" id="toggle-short">
+                <i class="fas fa-times text-4xl"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="side" id="side">
+        <div class="side-short cursor-pointer" id="side-short">
+            <i class="fas fa-times text-4xl"></i>
+        </div>
+        <div class="side-in block w-full h-full">
+            <header class="side-head text-center block w-full">
+                <h1 class="text-2xl font-bold font-serif">Your Bag</h1>
+            </header>
+            <main>
+
+            </main>
+            <footer class="absolute bottom-0 w-full block text-center">
+                <div class="Foot-in flex flex-col">
+                    <div class="total text-3xl font-mono">
+                        Total : <span>$0.00</span>
+                    </div>
+                    <div class="check-btn mt-5">
+                        <button class="border-2 border-solid bg-orange-500 rounded-3xl w-3/5 p-2">CHECKOUT</button>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+
+    <main class="block w-full" id="m">
+        <div class="m-in ">
+            <div class="search block h-full w-1/5">
+                <div class="searchbar">
+                    <input type="search" name="search" id="search" class="p-1.5 shadow-xl" placeholder="Search....">
+                </div>
+                <div class="comp">
+                    <h1 class="mx-2.5 text-xl font-bold">Company</h1>
+                    <ul>
+                        <li class="m-1 text-base font-semibold text-orange-600 cursor-pointer all"> All</li>
+                        <li class="m-1 text-base font-semibold text-orange-600 cursor-pointer ik"> Ikea</li>
+                        <li class="m-1 text-base font-semibold text-orange-600 cursor-pointer mar"> Marcosa </li>
+                        <li class="m-1 text-base font-semibold text-orange-600 cursor-pointer car"> Caress </li>
+                        <li class="m-1 text-base font-semibold text-orange-600 cursor-pointer lid"> Liddy</li>
+                    </ul>
+                </div>
+                <div class="price mx-3">
+                    <div class="pri">
+                        <h1>Price</h1>
+                    </div>
+                    <input type="range" name="range" id="range" min="0" max="80" value="80">
+                    <div class="val">
+                        <h1 class="text-base font-bold">Value : <span id="range-val"></span></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imgs " id="img-container">
+                
+            </div>           
+        </div>
+
+     
+    </main>
+
+    <div class="preloader">
+        
+    </div>
+     <script  src="./js/nav.js"></script> 
+     <script type="module" src="app.js"></script>
+    <script type="module" src="product.js"></script>
+    <script type="module" src="./js/product-show.js"> </script>
+    <script type="module" src="./js/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+@import url("app.css");
+
+.m-in {
+    width: 80%;
+    margin: 0px auto;
+    height: 100%;
+    padding-top: 80px;
+    display: flex;
+    position: relative;
+
+}
+
+.imgs {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.imgs .img {
+    width: 33.33%;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.imgs img {
+    width: 300px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.imgs .img:hover .btns {
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+.des-Img {
+    width: 45%;
+    height: 100%;
+}
+
+.des-Img img {
+    border-radius: 8px;
+}
+
+.dots span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.add-btn a {
+    border-radius: 8px;
+    padding: 4px 18px;
+    border: 2px solid darkorange;
+    background-color: darkorange;
+    color: white;
+}
+
+.add-btn a:hover {
+    color: black;
+    background-color: bisque;
+}
+
+.des {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 64px;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:1024px) {
+    .m-in {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imgs {
+        width: 100%;
+    }
+
+    .des {
+        padding: 12px;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+
+    .m-in {
+        width: 100%;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .imgs {
+        width: 100%;
+    }
+
+    .des {
+        padding: 16px;
+        flex-direction: column;
+    }
+
+    .des-Img {
+        width: 100%;
+    }
+
+    .des-para p {
+        width: 100%;
+    }
+
+    .imgs {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .imgs .img {
+        width: 100%;
+    }
+
+    .imgs img {
+        width: 500px;
+        height: 250px;
+        margin: auto;
+    }
+}
+
+
+.preloader {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url("./img/pre.gif") no-repeat center;
+    z-index: 100;
+    top: 0;
+}
