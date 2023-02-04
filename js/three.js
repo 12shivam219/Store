@@ -28,7 +28,7 @@ n.innerHTML = r.map((data) => {
         </div>
     </footer>
 </div>`)
-})
+}).join('')
 
 let imge = document.querySelectorAll(".imgg");
 
