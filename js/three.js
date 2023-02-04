@@ -4,9 +4,6 @@ let n = document.getElementById("foot-imgs");
 let f = document.getElementById("ff");
 let f_i = document.getElementsByClassName("foot");
 
-
-
-
 let r = images.filter((data) => {
     return (data.id === 1 || data.id === 2 || data.id === 3)
 })
