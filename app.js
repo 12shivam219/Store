@@ -12,7 +12,6 @@ else {
 }
 
 
-
 let display = (ge) => {
     container.innerHTML = ge.map((data) => {
         return (`<div class="img">

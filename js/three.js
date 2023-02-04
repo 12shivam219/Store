@@ -1,10 +1,11 @@
-import { images } from "../object";
+// import { images } from "../object";
+import { ge } from "../app";
 
 let n = document.getElementById("foot-imgs");
 let f = document.getElementById("ff");
 let f_i = document.getElementsByClassName("foot");
 
-let r = images.filter((data) => {
+let r = ge.filter((data) => {
     return (data.id === 1 || data.id === 2 || data.id === 3)
 })
 
@@ -31,14 +32,13 @@ n.innerHTML = r.map((data) => {
 }).join('')
 
 let imge = document.querySelectorAll(".imgg");
-
 for (let jk of imge) {
     jk.addEventListener("click", function (eve) {
         let evs = eve.target;
         f_i[0].style.display = "none";
         let new_div = document.createElement("div");
         new_div.setAttribute("class", "des flex w-4/5 h-full m-auto pt-12 relative")
-        let e = images.filter((data) => data.id == evs.id)
+        let e = ge.filter((data) => data.id == evs.id)
         new_div.innerHTML = e.map((data) => {
             return (`
                     <div class="des-Img">
