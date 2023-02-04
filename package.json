@@ -1,7 +1,7 @@
 {
   "name": "comfy-store",
   "version": "1.0.0",
-  "description": "",
+  "description": "This shop have all comfort item.",
   "main": "index.js",
   "scripts": {
     "start": "vite"
@@ -13,5 +13,13 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4",
     "vite": "^4.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/12shivam219/Store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/12shivam219/Store/issues"
+  },
+  "homepage": "https://github.com/12shivam219/Store#readme"
 }

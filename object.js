@@ -2,7 +2,7 @@
 export let images = [
     {
         id: 1,
-        image: "../Store/img/1.jpg",
+        image: "./img/1.jpg",
         title: "High-Back Bench",
         price: 9.99,
         span: "BY IKEA",
@@ -11,7 +11,7 @@ export let images = [
 
     {
         id: 2,
-        image: "../Store/img/2.jpg",
+        image: "./img/2.jpg",
         title: "Albany Table",
         price: 79.99,
         span: "BY MARCOS",
@@ -20,7 +20,7 @@ export let images = [
 
     {
         id: 3,
-        image: "../Store/img/3.jpg",
+        image: "./img/3.jpg",
         title: "Accent Chair",
         price: 25.99,
         span: "BY CARESSA",
@@ -29,7 +29,7 @@ export let images = [
 
     {
         id: 4,
-        image: "../Store/img/4.jpg",
+        image: "./img/4.jpg",
         title: "Wooden Table",
         price: 45.99,
         span: "BY CARESSA",
@@ -38,7 +38,7 @@ export let images = [
 
     {
         id: 5,
-        image: "../Store/img/5.jpg",
+        image: "./img/5.jpg",
         title: "Dining Table",
         price: 6.99,
         span: "BY CARESSA",
@@ -47,7 +47,7 @@ export let images = [
 
     {
         id: 6,
-        image: "../Store/img/6.jpg",
+        image: "./img/6.jpg",
         title: "Sofa Set",
         price: 69.99,
         span: "BY LIDDY",
@@ -56,7 +56,7 @@ export let images = [
 
     {
         id: 7,
-        image: "../Store/img/7.jpg",
+        image: "./img/7.jpg",
         title: "Modern Bookshelf",
         price: 8.99,
         span: "BY MARCOS",
@@ -65,7 +65,7 @@ export let images = [
 
     {
         id: 8,
-        image: "../Store/img/8.jpg",
+        image: "./img/8.jpg",
         title: "Emperor Bed",
         price: 21.99,
         span: "BY LIDDY",
@@ -74,7 +74,7 @@ export let images = [
 
     {
         id: 9,
-        image: "../Store/img/9.jpg",
+        image: "./img/9.jpg",
         title: "Utopia Sofa",
         price: 39.95,
         span: "BY MARCOS",
@@ -83,7 +83,7 @@ export let images = [
 
     {
         id: 10,
-        image: "../Store/img/10.jpg",
+        image: "./img/10.jpg",
         title: "Entertainment Center",
         price: 29.98,
         span: "BY LIDDY",
@@ -92,7 +92,7 @@ export let images = [
 
     {
         id: 11,
-        image: "../Store/img/11.jpg",
+        image: "./img/11.jpg",
         title: "Albany Sectional",
         price: 10.99,
         span: "BY IKEA",
@@ -101,7 +101,7 @@ export let images = [
 
     {
         id: 12,
-        image: "../Store/img/12.jpg",
+        image: "./img/12.jpg",
         title: "Leather Sofa",
         price: 9.99,
         span: "BY LIDDY",
