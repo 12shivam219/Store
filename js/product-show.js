@@ -2,13 +2,14 @@ let main = document.getElementById("m");
 let con = document.getElementsByClassName("m-in")
 import { ge } from "../app";
 
+console.log(ge);
 let search = document.querySelectorAll(".search-btn");
 
 for (let se of search) {
     se.addEventListener("click", function (e) {
         let ev = e.target;
-
-        main.removeChild(con[0]);
+        console.log(main);
+        con[0].style.display="none";
         let div = document.createElement("div");
         div.setAttribute("class", "des")
         let ne = ge.filter((data) => data.id == ev.id)
