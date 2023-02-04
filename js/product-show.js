@@ -1,6 +1,6 @@
 let main = document.getElementById("m");
 let con = document.getElementsByClassName("m-in")
-import { images } from "../object";
+import { ge } from "../app";
 
 let search = document.querySelectorAll(".search-btn");
 
@@ -11,7 +11,7 @@ for (let se of search) {
         main.removeChild(con[0]);
         let div = document.createElement("div");
         div.setAttribute("class", "des")
-        let ne = images.filter((data) => data.id == ev.id)
+        let ne = ge.filter((data) => data.id == ev.id)
         div.innerHTML = ne.map((data) => {
             return (`
     <div class="des-Img">

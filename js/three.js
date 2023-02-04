@@ -1,5 +1,4 @@
-// import { images } from "../object";
-import { ge } from "../app";
+import display, { ge } from "../app";
 
 let n = document.getElementById("foot-imgs");
 let f = document.getElementById("ff");
@@ -8,7 +7,7 @@ let f_i = document.getElementsByClassName("foot");
 let r = ge.filter((data) => {
     return (data.id === 1 || data.id === 2 || data.id === 3)
 })
-
+display();
 n.innerHTML = r.map((data) => {
     return (`<div class="img">
     <img src=${data.image} alt="">
@@ -29,7 +28,7 @@ n.innerHTML = r.map((data) => {
         </div>
     </footer>
 </div>`)
-}).join('')
+}).join('') ;
 
 let imge = document.querySelectorAll(".imgg");
 for (let jk of imge) {

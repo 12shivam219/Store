@@ -36,4 +36,5 @@ let display = (ge) => {
 `)
     }).join('');
 }
+
 export default display;
