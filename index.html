@@ -67,14 +67,12 @@
         <div class="side-short cursor-pointer" id="side-short">
             <i class="fas fa-times text-4xl"></i>
         </div>
-        <div class="side-in block w-full h-full">
-            <header class="side-head text-center block w-full">
-                <h1 class="text-2xl font-bold font-serif">Your Bag</h1>
-            </header>
-            <main>
-
-            </main>
-            <footer class="absolute bottom-0 w-full block text-center">
+        <header class="side-head text-center block w-full">
+            <h1 class="text-2xl font-bold font-serif">Your Bag</h1>
+        </header>
+        <main class=" w-full block pt-4" id="cart-main">
+           
+            <footer class=" w-full block text-center">
                 <div class="Foot-in flex flex-col">
                     <div class="total text-3xl font-mono">
                         Total : <span>$0.00</span>
@@ -83,9 +81,8 @@
                         <button class="border-2 border-solid bg-orange-500 rounded-3xl w-3/5 p-2">CHECKOUT</button>
                     </div>
                 </div>
-
             </footer>
-        </div>
+        </main>
     </div>
 
     <main class="Main">
@@ -101,28 +98,29 @@
     </main>
 
     <footer class="block w-full" id="ff">
-       
+
         <div class="foot block w-4/5 h-full m-auto pt-12">
             <div class="foot-head block w-full text-center">
                 <h1 class="inline-block text-5xl font-mono font-normal">/Featured</h1>
             </div>
-            <div class="imgs"  id="foot-imgs">
-                
-            </div> 
-            <div class="last text-center mt-20">
-                <button class="bg-orange-500 text-white p-1 rounded-3xl hover:text-black hover:bg-orange-400"> <a href="products.html" class="p-4"> ALL
-                    PRODUCTS</a></button>
-                    
+            <div class="imgs" id="foot-imgs">
+
+            </div>
+            <div class="last text-center mt-20" >
+                <button class="bg-orange-500 text-white p-1 rounded-3xl hover:text-black hover:bg-orange-400"> <a
+                        href="products.html" class="p-4"> ALL
+                        PRODUCTS</a></button>
+
             </div>
         </div>
     </footer>
 
-    <div class="preloader">
+    <div class="preloader"></div>
 
-    </div>
     <script src="./js/nav.js"></script>
     <script type="module" src="./object.js"></script>
     <script type="module" src="./js/three.js"></script>
+    <script type="module" src="./cart/add.js"></script>
 
 </body>
 

@@ -1,4 +1,3 @@
-
 export let images = [
     {
         id: 1,

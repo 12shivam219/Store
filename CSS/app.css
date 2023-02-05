@@ -1,3 +1,5 @@
+@import url("./products.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +22,6 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
-    /* position: absolute;
-    top: 0; */
     margin-top: -128px;
 }
 
@@ -138,7 +138,6 @@ body {
     display: inline-block;
     margin-right: 20px;
     object-fit: cover;
-    height: 230px;
     border-radius: 10px;
     position: relative;
 }
@@ -241,27 +240,16 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 100;
-    max-width: 500px;
+    max-width: 400px;
     overflow: scroll;
     background-color: rgb(255, 255, 255);
-    padding: 48px 16px 0 16px;
+    padding: 48px 0px 0 0px;
     transform: translateX(100%);
     transition: all 1s ease;
 }
 
 .side-overlay {
-    display: block;
-    position: fixed;
-    top: 0;
     opacity: 1;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 100;
-    max-width: 500px;
-    overflow: scroll;
-    background-color: rgb(255, 255, 255);
-    padding: 48px 16px 0 16px;
     transform: translateX(0%);
     transition: all 1s ease;
 }

@@ -9,14 +9,14 @@ let r = ge.filter((data) => {
 })
 n.innerHTML = r.map((data) => {
     return (`<div class="img">
-    <img src=${data.image} alt="">
+    <img src=${data.image} alt="" class="f-img">
     <div class="btns">
         <div class="btns-in">
             <div class="search-btn">
            <i class="imgg fas fa-search"id=${data.id}></i>
             </div>
-            <div class="cart-btn">
-                <i class="fas fa-shopping-cart"></i>
+            <div class="cart-btn">  
+                <i class="fas fa-shopping-cart add"></i>
             </div>
         </div>
     </div>
