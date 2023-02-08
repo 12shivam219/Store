@@ -1,7 +1,7 @@
 export let images = [
     {
         id: 1,
-        image: "./img/1.jpg",
+        image: "https://comfy-stor.netlify.app/img/1.jpg",
         title: "High-Back Bench",
         price: 9.99,
         span: "BY IKEA",
@@ -10,7 +10,7 @@ export let images = [
 
     {
         id: 2,
-        image: "./img/2.jpg",
+        image: "https://comfy-stor.netlify.app/img/2.jpg",
         title: "Albany Table",
         price: 79.99,
         span: "BY MARCOS",
@@ -19,7 +19,7 @@ export let images = [
 
     {
         id: 3,
-        image: "./img/3.jpg",
+        image: "https://comfy-stor.netlify.app/img/4.jpg",
         title: "Accent Chair",
         price: 25.99,
         span: "BY CARESSA",
@@ -108,3 +108,11 @@ export let images = [
     }
 
 ]
+
+
+// let url ='https://course-api.com/javascript-store-products';
+// fetch(url).then((response)=> {
+//     return response.json();
+// }).then((data)=> {
+//     console.log(data);
+// })
