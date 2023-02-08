@@ -1,4 +1,4 @@
-import { ge } from "../app";
+import { ge } from "../app.js";
 let main = document.getElementById("m");
 let con = document.getElementsByClassName("m-in")
 

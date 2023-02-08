@@ -1,7 +1,7 @@
 export let images = [
     {
         id: 1,
-        image: "https://comfy-stor.netlify.app/img/1.jpg",
+        image: "./img/1.JPG",
         title: "High-Back Bench",
         price: 9.99,
         span: "BY IKEA",
@@ -10,7 +10,7 @@ export let images = [
 
     {
         id: 2,
-        image: "https://comfy-stor.netlify.app/img/2.jpg",
+        image: "./img/2.JPG",
         title: "Albany Table",
         price: 79.99,
         span: "BY MARCOS",
@@ -19,7 +19,7 @@ export let images = [
 
     {
         id: 3,
-        image: "https://comfy-stor.netlify.app/img/4.jpg",
+        image: "./img/3.JPG",
         title: "Accent Chair",
         price: 25.99,
         span: "BY CARESSA",
@@ -28,7 +28,7 @@ export let images = [
 
     {
         id: 4,
-        image: "./img/4.jpg",
+        image: "./img/4.JPG",
         title: "Wooden Table",
         price: 45.99,
         span: "BY CARESSA",
@@ -37,7 +37,7 @@ export let images = [
 
     {
         id: 5,
-        image: "./img/5.jpg",
+        image: "./img/5.JPG",
         title: "Dining Table",
         price: 6.99,
         span: "BY CARESSA",
@@ -46,7 +46,7 @@ export let images = [
 
     {
         id: 6,
-        image: "./img/6.jpg",
+        image: "./img/6.JPG",
         title: "Sofa Set",
         price: 69.99,
         span: "BY LIDDY",
@@ -55,7 +55,7 @@ export let images = [
 
     {
         id: 7,
-        image: "./img/7.jpg",
+        image: "./img/7.JPG",
         title: "Modern Bookshelf",
         price: 8.99,
         span: "BY MARCOS",
@@ -64,7 +64,7 @@ export let images = [
 
     {
         id: 8,
-        image: "./img/8.jpg",
+        image: "./img/8.JPG",
         title: "Emperor Bed",
         price: 21.99,
         span: "BY LIDDY",
@@ -73,7 +73,7 @@ export let images = [
 
     {
         id: 9,
-        image: "./img/9.jpg",
+        image: "./img/9.JPG",
         title: "Utopia Sofa",
         price: 39.95,
         span: "BY MARCOS",
@@ -82,7 +82,7 @@ export let images = [
 
     {
         id: 10,
-        image: "./img/10.jpg",
+        image: "./img/10.JPG",
         title: "Entertainment Center",
         price: 29.98,
         span: "BY LIDDY",
@@ -91,7 +91,7 @@ export let images = [
 
     {
         id: 11,
-        image: "./img/11.jpg",
+        image: "./img/11.JPG",
         title: "Albany Sectional",
         price: 10.99,
         span: "BY IKEA",
@@ -100,7 +100,7 @@ export let images = [
 
     {
         id: 12,
-        image: "./img/12.jpg",
+        image: "./img/12.JPG",
         title: "Leather Sofa",
         price: 9.99,
         span: "BY LIDDY",
@@ -108,11 +108,3 @@ export let images = [
     }
 
 ]
-
-
-// let url ='https://course-api.com/javascript-store-products';
-// fetch(url).then((response)=> {
-//     return response.json();
-// }).then((data)=> {
-//     console.log(data);
-// })

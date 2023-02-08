@@ -1,6 +1,6 @@
 
-import { container } from "../app";
-import { images } from "../object";
+import { container } from "../app.js";
+import { images } from "../object.js";
 
 let qe = document.querySelectorAll(".img");
 let ser = document.getElementById("search");
@@ -46,7 +46,7 @@ let lidd = images.filter((data) => {
 })
 
 al[0].addEventListener("click", () => {
-    container.innerHTML = images.map((data) => {
+    container.innerHTML += images.map((data) => {
         return (`<div class="img">
         <img src=${data.image} alt="">
         <div class="btns">
@@ -67,7 +67,7 @@ al[0].addEventListener("click", () => {
         </footer>
     </div>
 `)
-    }).join('');
+    });
 
 
 })
@@ -113,7 +113,7 @@ ikea[0].addEventListener("click", () => {
 
 marc[0].addEventListener("click", () => {
 
-    container.innerHTML = mar.map((data) => {
+    container.innerHTML += mar.map((data) => {
         return (`<div class="img">
         <img src=${data.image} alt="">
         <div class="btns">
@@ -134,7 +134,7 @@ marc[0].addEventListener("click", () => {
         </footer>
     </div>
     `)
-    }).join('');
+    });
 
     ser.addEventListener("input", () => {
         document.querySelectorAll(".img").forEach((ele) => {

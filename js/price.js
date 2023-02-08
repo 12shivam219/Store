@@ -1,6 +1,6 @@
-import display from "../app";
-import { ge } from "../app";
-import { container } from "../app";
+import display , {ge , container}from "../app.js";
+// import { ge, } from "../app.js";
+// import { container } from "../app.js";
 
 let range = document.getElementById("range");
 let range_val = document.getElementById("range-val");

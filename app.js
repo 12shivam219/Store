@@ -1,5 +1,5 @@
 export let container = document.getElementById("img-container");
-import { images } from "./object";
+import { images } from "./object.js";
 
 export let ge = localStorage.getItem("store");
 localStorage.setItem("store", JSON.stringify(images));
@@ -29,12 +29,12 @@ let display = (ge) => {
         <footer>
             <div class="block mt-4 text-center">
                 <p class="tracking-wide text-base">${data.title}</p>
-                <span class="text-xl font-bold">'$ ${data.price}'</span>
+                <span class="text-xl font-bold">$ ${data.price}</span>
             </div>
         </footer>
     </div>
 `)
-    }).join('');
+    }).join(" ");
 }
 
 export default display;
