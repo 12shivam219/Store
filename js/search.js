@@ -10,6 +10,9 @@ let serchh = () => {
     ser.addEventListener("input", () => {
         qe.forEach((el) => {
             let inpval = ser.value;
+            console.log(el,"el");
+            console.log(inpval);
+            console.log(document.getElementsByClassName("bsb")[0]);
             qt = el.getElementsByClassName("bsb")[0].innerHTML;
             if (qt.includes(inpval)) {
                 el.style.display = "block";

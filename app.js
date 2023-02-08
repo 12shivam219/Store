@@ -22,13 +22,13 @@ let display = (ge) => {
                 <i class="fas fa-search" id=${data.id}></i>
                 </div>
                 <div class="cart-btn">
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-shopping-cart add"></i>
                 </div>
             </div>
         </div>
         <footer>
             <div class="block mt-4 text-center">
-                <p class="tracking-wide text-base">${data.title}</p>
+                <p class="tracking-wide text-base bsb">${data.title}</p>
                 <span class="text-xl font-bold">$ ${data.price}</span>
             </div>
         </footer>

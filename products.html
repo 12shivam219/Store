@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./CSS/products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./img/head-logo.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -67,25 +68,20 @@
         <div class="side-short cursor-pointer" id="side-short">
             <i class="fas fa-times text-4xl"></i>
         </div>
-        <div class="side-in block w-full h-full">
-            <header class="side-head text-center block w-full">
-                <h1 class="text-2xl font-bold font-serif">Your Bag</h1>
-            </header>
-            <main>
-
-            </main>
-            <footer class="absolute bottom-0 w-full block text-center">
-                <div class="Foot-in flex flex-col">
-                    <div class="total text-3xl font-mono">
-                        Total : <span>$0.00</span>
-                    </div>
-                    <div class="check-btn mt-5">
-                        <button class="border-2 border-solid bg-orange-500 rounded-3xl w-3/5 p-2">CHECKOUT</button>
-                    </div>
+        <header class="side-head text-center block w-full">
+            <h1 class="text-2xl font-bold font-serif">Your Bag</h1>
+        </header>
+        <main class="" id="cart-main"></main>
+        <footer class=" w-full block text-center">
+            <div class="Foot-in flex flex-col">
+                <div class="total text-3xl font-mono">
+                    Total : <span>$0.00</span>
                 </div>
-
-            </footer>
-        </div>
+                <div class="check-btn mt-5">
+                    <button class="border-2 border-solid bg-orange-500 rounded-3xl w-3/5 p-2">CHECKOUT</button>
+                </div>
+            </div>
+        </footer>
     </div>
 
 
@@ -117,20 +113,21 @@
             </div>
 
             <div class="imgs" id="img-container">
-                
-            </div>           
+
+            </div>
         </div>
 
-     
+
     </main>
 
     <div class="preloader">
-        
+
     </div>
-     <script  src="./js/nav.js"></script> 
-     <script type="module" src="app.js"></script>
+    <script src="./js/nav.js"></script>
+    <script type="module" src="app.js"></script>
     <script type="module" src="product.js"></script>
     <script type="module" src="./js/product-show.js"> </script>
+    <script type="module" src="./cart/add.js"></script>
     <script type="module" src="./js/search.js"></script>
 </body>
 
