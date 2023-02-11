@@ -15,10 +15,11 @@
     width: 80%;
     height: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .imgs .img {
-    width: 33.33%;
+    width: 300px;
     position: relative;
     object-fit: cover;
     margin-bottom: 16px;
