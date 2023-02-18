@@ -1,5 +1,5 @@
 let cart_main = document.getElementById("cart-main");
-let parent, child1, child2, child3, gett;
+let parent, child1, child2, child3, gett, del, d;
 
 let all = document.querySelectorAll(".add");
 
@@ -35,7 +35,6 @@ for (let f of all) {
     })
 }
 
-
 let add_cart = () => {
     gett = localStorage.getItem('cart');
     if (gett == null) {
@@ -46,7 +45,7 @@ let add_cart = () => {
     }
     if (gett.length != 0) {
 
-        cart_main.innerHTML = gett.map((element) => {
+        cart_main.innerHTML = gett.map((element, index) => {
             return (`
             <div class="flex justify-evenly items-center py-3">
             <div class="w-20 h-16">
@@ -55,7 +54,7 @@ let add_cart = () => {
             <div class="leading-3">
                 <h1 class="text-lg">${element.title}</h1>
                 <span class="block mt-1.5">${element.price}</span>
-                <button class="my-2" id="remov">remove</button>
+                <button class="my-2 remov" id="${index}">remove</button>
             </div>
             <div class="flex flex-col justify-between h-16">
                 <div class="text-xl">
@@ -76,4 +75,17 @@ let add_cart = () => {
 }
 
 add_cart();
+
+del = document.querySelectorAll(".remov");
+
+for (let btn of del) {
+    btn.addEventListener("click", (e) => {
+        let index = Array.from(e.target.closest(".flex").parentElement.children).indexOf(e.target.closest(".flex"));
+        let cart = JSON.parse(localStorage.getItem("cart"));
+        cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        add_cart();
+    });
+}
+
 
