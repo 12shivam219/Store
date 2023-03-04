@@ -58,7 +58,7 @@ for (let jk of imge) {
                     <div class="des-para my-6">
                     <p class="w-3/4">${data.desc}</p></div>
                     <div class="add-btn">
-                        <button><a href="#">ADD TO CART</a></button>
+                        <button class='add'>ADD TO CART</button>
                     </div>
                     </div>
                     <div class="can absolute right-0 top-12">

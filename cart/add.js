@@ -2,9 +2,16 @@ let cart_main = document.getElementById("cart-main");
 let parent, child1, child2, child3, gett, del, d;
 
 let all = document.querySelectorAll(".add");
+console.log(all);
+
+let sh=document.getElementById("sh");
+
+let count=0;
 
 for (let f of all) {
     f.addEventListener("click", (e) => {
+        count++;
+        sh.textContent=count;
         gett = localStorage.getItem('cart');
         if (gett == null) {
             gett = [];
@@ -80,6 +87,8 @@ del = document.querySelectorAll(".remov");
 
 for (let btn of del) {
     btn.addEventListener("click", (e) => {
+        count--;
+        sh.textContent=count;
         let index = Array.from(e.target.closest(".flex").parentElement.children).indexOf(e.target.closest(".flex"));
         let cart = JSON.parse(localStorage.getItem("cart"));
         cart.splice(index, 1);
